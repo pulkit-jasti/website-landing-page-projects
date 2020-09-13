@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    list-style: none;
+
+    font-family: 'Indie Flower', cursive;
+}
+
+a{text-decoration: none;}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bck.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+.side-bar{
+    height: 100%;
+    width: 6%;
+    background-color: black;
+    position: relative;
+    text-align: center;
+}
+
+.social{
+    height: 35%;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 65%;
+}
+
+.social ul{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-search,.fa-bars{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 35px;
+    color: white;
+    transition-duration: 200ms;
+}
+
+.fa-search:hover,.fa-bars:hover{
+    font-size: 40px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.fa-pinterest-square, .fa-facebook-square, .fa-twitter-square, .fa-instagram{
+    font-size: 25px;
+    padding: 10px;
+    transition-duration: 300ms;
+}
+
+.fa-pinterest-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram:hover{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.container{
+    height: 100%;
+    width: 96%;
+    /*background-color: aqua;*/
+}
+
+
+
+.top-bar{
+    height: 10%;
+    margin: 20px;
+    /*background-color: red;*/
+}
+
+ul{
+    height: 100%;
+    width: auto;
+}
+
+.top-bar ul li{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 1px 10px;
+    border-radius: 5px;
+    transition-duration: 100ms;
+}
+
+.top-bar ul li:hover{
+    background-color: white;
+    color: #000;
+    mix-blend-mode: screen;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+
+
+.content{
+    margin: 20px;
+    /*background-color: green;*/
+    height: 80%;
+}
+
+.title{
+    font-size: 50px;
+    color: white;
+    margin: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+
+
+.highlight{
+    color: yellow;
+}
+
+
+.explor-btn{
+    /*background-color: maroon;*/
+    height: 50px;
+    width: 130px;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    mix-blend-mode: screen;
+    background-color: white;
+    transition-duration: 100ms;
+    padding-top: 2px;
+    font-weight: 600;
+}
+
+
+.explor-btn:hover{
+    cursor: pointer;
+    width: 135px;
+    height: 55px;
+    margin-top: 17.5px;
+    margin-left: 17.5px;
+    padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+.next-page{
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
