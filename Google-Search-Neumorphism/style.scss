@@ -1,0 +1,110 @@
+//COLORS
+$bright-red: #ff5851;
+$yellow: #fdef52;
+$gray: #343436;
+$not-black-but-dark: #1c1b20;
+$silver: #f8f8f8;
+
+//GLOBAL STYLES
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	font-family: monospace;
+}
+
+//MIXIN
+@mixin flexcenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//MAIN CSS
+.landing-page {
+	//overflow-x: hidden;
+	height: 100vh;
+	width: 100%;
+	background-color: #e6e7ee;
+	@include flexcenter();
+
+	.search-bar-wrapper {
+		height: 60px;
+		width: 500px;
+		padding: 0 20px;
+		background-color: #e6e7ee;
+		border-radius: 30px;
+		box-shadow: 7px 7px 14px #cbced1, -7px -7px 14px #fff;
+
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		img {
+			height: 40%;
+		}
+
+		input {
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0);
+
+			outline: none;
+			border: none;
+
+			font-size: 1.2rem;
+			font-family: sans-serif;
+		}
+
+		transition-duration: 400ms;
+
+		&:hover {
+			box-shadow: none;
+		}
+	}
+}
+
+.github-link {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	p {
+		a,
+		a:visited {
+			color: blue;
+		}
+	}
+}
+
+.mobile {
+	display: none;
+
+	.mobile-container {
+		width: 100%;
+		height: 100vh;
+		padding: 0 20px;
+		@include flexcenter();
+
+		p {
+			font-family: monospace !important;
+			font-size: 2rem;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	main {
+		display: none;
+	}
+
+	.mobile {
+		display: unset;
+	}
+}
