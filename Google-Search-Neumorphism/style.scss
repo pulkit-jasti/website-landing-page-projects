@@ -14,7 +14,7 @@ $silver: #f8f8f8;
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	font-family: monospace;
+	font-family: sans-serif;
 }
 
 //MIXIN
@@ -24,57 +24,171 @@ $silver: #f8f8f8;
 	align-items: center;
 }
 
+@mixin neumorphism {
+}
+
 //MAIN CSS
 .landing-page {
 	//overflow-x: hidden;
+	position: relative;
 	height: 100vh;
 	width: 100%;
 	background-color: #e6e7ee;
 	@include flexcenter();
+	flex-direction: column;
 
-	.search-bar-wrapper {
-		height: 60px;
-		width: 500px;
-		padding: 0 20px;
-		background-color: #e6e7ee;
-		border-radius: 30px;
-		box-shadow: 7px 7px 14px #cbced1, -7px -7px 14px #fff;
+	.top-nav-bar {
+		position: absolute;
+		top: 0;
+		left: 0;
 
-		display: flex;
-		align-items: center;
-		gap: 20px;
+		//height: 90px;
+		width: 100%;
+		padding: 20px 30px;
+		//background-color: lightgreen;
 
-		img {
-			height: 40%;
+		@include flexcenter();
+		justify-content: space-between;
+
+		.language {
+			padding: 10px 20px;
+			border-radius: 100px;
+
+			box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #fff;
+
+			font-size: 1rem;
+			font-weight: 600;
+			letter-spacing: 1px;
+			color: rgba(0, 0, 0, 0.6);
 		}
 
-		input {
-			height: 100%;
-			width: 100%;
-			background-color: rgba(0, 0, 0, 0);
+		.right {
+			height: 60px;
+			//background-color: lightblue;
+			@include flexcenter();
+			gap: 20px;
 
-			outline: none;
-			border: none;
+			.btn-wrapper {
+				height: 70%;
+				width: 43px;
+				border-radius: 100px;
+				box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #fff;
+				@include flexcenter();
 
-			font-size: 1.2rem;
-			font-family: sans-serif;
+				transition-duration: 400ms;
+
+				img {
+					height: 60%;
+					filter: none;
+				}
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				&:active {
+					box-shadow: none;
+				}
+			}
+
+			img {
+				height: 100%;
+				filter: drop-shadow(7px 7px 4px #cbced1) drop-shadow(-7px -7px 4px #fff);
+			}
+		}
+	}
+
+	.search-container {
+		@include flexcenter();
+		flex-direction: column;
+		gap: 10px;
+		transform: translateY(-40px);
+
+		.hero {
+			height: 150px;
+
+			img {
+				height: 100%;
+			}
 		}
 
-		transition-duration: 400ms;
+		.search-bar-wrapper {
+			height: 60px;
+			width: 500px;
+			padding: 0 20px;
+			background-color: #e6e7ee;
+			border-radius: 30px;
+			box-shadow: 7px 7px 14px #cbced1, -7px -7px 14px #fff;
 
-		&:hover {
-			box-shadow: none;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
+			img {
+				height: 40%;
+			}
+
+			input {
+				height: 100%;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0);
+
+				outline: none;
+				border: none;
+
+				font-size: 1.2rem;
+				font-family: sans-serif;
+			}
+
+			transition-duration: 400ms;
+
+			&:hover {
+				box-shadow: none;
+			}
+		}
+
+		.btn-container {
+			margin-top: 30px;
+			display: flex;
+			gap: 30px;
+
+			button {
+				height: 50px;
+				width: 170px;
+				background-color: #e6e7ee;
+
+				font-size: 1rem;
+				font-weight: 700;
+				color: rgba(0, 0, 0, 0.6);
+
+				border-radius: 30px;
+				border: none;
+				outline: none;
+
+				box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #fff;
+				transition-duration: 300ms;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				&:active {
+					box-shadow: none;
+				}
+			}
 		}
 	}
 }
 
 .github-link {
 	position: fixed;
+	z-index: 10000;
 	bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
 
 	p {
+		color: black;
 		a,
 		a:visited {
 			color: blue;
