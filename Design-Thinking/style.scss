@@ -43,7 +43,7 @@ body {
 }
 
 .landing-page {
-	//overflow-x: hidden;
+	overflow-x: hidden;
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -156,6 +156,7 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 10000;
+	color: #fff;
 
 	p {
 		a,
@@ -183,14 +184,6 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-	main {
-		//display: none;
-	}
-
-	.mobile {
-		//display: unset;
-	}
-
 	.landing-page {
 		height: 100vh;
 		flex-direction: column;
@@ -227,7 +220,6 @@ body {
 	}
 
 	.github-link {
-		color: #fff;
 		width: 100%;
 		text-align: center;
 	}

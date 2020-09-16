@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Design Thinking</title>
 
+		<link rel="icon" href="images/fashion.png" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
@@ -25,7 +26,7 @@
 				</div>
 				<div class="right">
 					<div class="register">
-						<form action="">
+						<form action="" id="login-form">
 							<div class="email-wrapper">
 								<label for="">email</label>
 								<input type="email" placeholder="john.doe@example.com" />
@@ -49,6 +50,10 @@
 			</div>
 		</section>
 
-		<script src="script.js"></script>
+		<script>
+			document.getElementById('login-form').addEventListener('submit', e => {
+				e.preventDefault();
+			});
+		</script>
 	</body>
 </html>
