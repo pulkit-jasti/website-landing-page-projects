@@ -17,6 +17,10 @@ $silver: #f8f8f8;
 	font-family: monospace;
 }
 
+body {
+	cursor: default;
+}
+
 //MIXIN
 @mixin flexcenter {
 	display: flex;
@@ -30,7 +34,7 @@ $silver: #f8f8f8;
 	position: absolute;
 	height: 100vh;
 	width: 100%;
-	background-image: url('../images/bck.jpg');
+	background-image: url('../images/bck-2.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -39,7 +43,6 @@ $silver: #f8f8f8;
 	//overflow-x: hidden;
 	height: 100vh;
 	width: 100%;
-	padding: 0 30px;
 
 	background: rgba(0, 0, 0, 0.1);
 	backdrop-filter: saturate(180%) blur(20px);
@@ -48,22 +51,82 @@ $silver: #f8f8f8;
 	@include flexcenter();
 	justify-content: flex-start;
 
-	.hero-container {
-		line-height: 12rem;
-		.hero-txt {
-			font-size: 9rem !important;
-			letter-spacing: -9px;
-			font-family: sans-serif;
-			font-weight: 700;
-		}
+	.left {
+		height: 100%;
+		width: 55%;
+		@include flexcenter();
 
-		.stroke {
+		.hero-container {
+			line-height: 12rem;
+
+			.hero-txt {
+				width: fit-content;
+				font-size: 9rem !important;
+				letter-spacing: -7px;
+				font-family: sans-serif;
+				font-weight: 700;
+				color: rgba(255, 255, 255, 0);
+				-webkit-text-stroke: 1px #fff;
+
+				transition-duration: 400ms;
+				&:hover {
+					color: #fff;
+					-webkit-text-stroke: 0px #fff;
+				}
+			}
+
+			/*.stroke {
 			color: rgba(255, 255, 255, 0);
-			-webkit-text-stroke: 0.9px #fff;
+			-webkit-text-stroke: 1px #fff;
+
+			&:hover {
+				color: #fff;
+				-webkit-text-stroke: 0px #fff;
+			}
 		}
 
 		.fill {
 			color: #fff;
+		}*/
+		}
+	}
+
+	.right {
+		height: 100%;
+		width: 50%;
+		//background-color: lightblue;
+		@include flexcenter();
+
+		.register {
+			width: 300px;
+			//background-color: lightcoral;
+			color: #fff;
+
+			form {
+				display: flex;
+				flex-direction: column;
+
+				label {
+					font-size: 1.7rem;
+					//font-family: sans-serif;
+					color: rgba(255, 255, 255, 0.4);
+
+					margin-bottom: 7px;
+				}
+
+				input {
+					background-color: rgba(0, 0, 0, 0);
+					padding-bottom: 7px;
+
+					outline: none;
+					border: none;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+					color: rgba(255, 255, 255, 0.4);
+					letter-spacing: 3px;
+					font-size: 2rem;
+				}
+			}
 		}
 	}
 }
