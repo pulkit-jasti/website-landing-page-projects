@@ -1,0 +1,111 @@
+//COLORS
+$bright-red: #ff5851;
+$yellow: #fdef52;
+$gray: #343436;
+$not-black-but-dark: #1c1b20;
+$silver: #f8f8f8;
+
+//GLOBAL STYLES
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	font-family: monospace;
+}
+
+//MIXIN
+@mixin flexcenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//MAIN CSS
+
+.background {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background-image: url('../images/bck.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.landing-page {
+	//overflow-x: hidden;
+	height: 100vh;
+	width: 100%;
+	padding: 0 30px;
+
+	background: rgba(0, 0, 0, 0.1);
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+
+	@include flexcenter();
+	justify-content: flex-start;
+
+	.hero-container {
+		line-height: 12rem;
+		.hero-txt {
+			font-size: 9rem !important;
+			letter-spacing: -9px;
+			font-family: sans-serif;
+			font-weight: 700;
+		}
+
+		.stroke {
+			color: rgba(255, 255, 255, 0);
+			-webkit-text-stroke: 0.9px #fff;
+		}
+
+		.fill {
+			color: #fff;
+		}
+	}
+}
+
+.github-link {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10000;
+
+	p {
+		a,
+		a:visited {
+			color: blue;
+		}
+	}
+}
+
+.mobile {
+	display: none;
+
+	.mobile-container {
+		width: 100%;
+		height: 100vh;
+		padding: 0 20px;
+		@include flexcenter();
+
+		p {
+			font-family: monospace !important;
+			font-size: 2rem;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	main {
+		display: none;
+	}
+
+	.mobile {
+		display: unset;
+	}
+}
