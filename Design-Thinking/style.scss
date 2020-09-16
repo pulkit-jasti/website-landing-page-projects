@@ -46,13 +46,11 @@ body {
 	//overflow-x: hidden;
 	height: 100vh;
 	width: 100%;
+	display: flex;
 
 	background: rgba(0, 0, 0, 0.1);
 	backdrop-filter: saturate(180%) blur(20px);
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
-
-	@include flexcenter();
-	justify-content: flex-start;
 
 	.left {
 		height: 100%;
@@ -186,10 +184,51 @@ body {
 
 @media screen and (max-width: 900px) {
 	main {
-		display: none;
+		//display: none;
 	}
 
 	.mobile {
-		display: unset;
+		//display: unset;
+	}
+
+	.landing-page {
+		height: 100vh;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.left {
+			width: 100%;
+			.hero-container {
+				line-height: 7rem;
+
+				.hero-txt {
+					font-size: 4.7rem;
+					letter-spacing: -2px;
+				}
+			}
+		}
+
+		.right {
+			width: 100%;
+			align-items: flex-start;
+			margin-top: 30px;
+
+			.register {
+				margin-left: 30px;
+				form {
+					.email-wrapper,
+					.password-wrapper {
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.github-link {
+		color: #fff;
+		width: 100%;
+		text-align: center;
 	}
 }
