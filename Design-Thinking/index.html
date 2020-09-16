@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Design Thinking</title>
 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
 
@@ -25,10 +26,17 @@
 				<div class="right">
 					<div class="register">
 						<form action="">
-							<label for="">email</label>
-							<input type="email" />
-							<label for="">password</label>
-							<input type="password" />
+							<div class="email-wrapper">
+								<label for="">email</label>
+								<input type="email" placeholder="john.doe@example.com" />
+							</div>
+							<div class="password-wrapper">
+								<label for="">password</label>
+								<input type="password" placeholder="Enter password" />
+							</div>
+							<button type="submit" class="arrow">
+								<i class="fa fa-arrow-right" aria-hidden="true"></i>
+							</button>
 						</form>
 					</div>
 				</div>

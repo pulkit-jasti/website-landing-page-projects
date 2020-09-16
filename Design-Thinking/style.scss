@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
 //COLORS
 $bright-red: #ff5851;
 $yellow: #fdef52;
@@ -61,8 +64,8 @@ body {
 
 			.hero-txt {
 				width: fit-content;
-				font-size: 9rem !important;
-				letter-spacing: -7px;
+				font-size: 8rem;
+				letter-spacing: -5px;
 				font-family: sans-serif;
 				font-weight: 700;
 				color: rgba(255, 255, 255, 0);
@@ -74,57 +77,75 @@ body {
 					-webkit-text-stroke: 0px #fff;
 				}
 			}
-
-			/*.stroke {
-			color: rgba(255, 255, 255, 0);
-			-webkit-text-stroke: 1px #fff;
-
-			&:hover {
-				color: #fff;
-				-webkit-text-stroke: 0px #fff;
-			}
-		}
-
-		.fill {
-			color: #fff;
-		}*/
 		}
 	}
 
 	.right {
 		height: 100%;
-		width: 50%;
+		width: 45%;
 		//background-color: lightblue;
 		@include flexcenter();
+		justify-content: flex-start;
 
 		.register {
 			width: 300px;
+			margin-left: 70px;
 			//background-color: lightcoral;
 			color: #fff;
 
 			form {
-				display: flex;
-				flex-direction: column;
-
-				label {
-					font-size: 1.7rem;
-					//font-family: sans-serif;
-					color: rgba(255, 255, 255, 0.4);
-
-					margin-bottom: 7px;
+				.email-wrapper,
+				.password-wrapper {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 40px;
 				}
 
-				input {
+				label {
+					font-size: 0.8rem;
+					//font-family: sans-serif;
+					font-family: 'Raleway', sans-serif;
+					color: rgba(255, 255, 255, 0.7);
+
+					margin-bottom: 13px;
+					text-transform: uppercase;
+					letter-spacing: 8px;
+					font-weight: 700;
+				}
+
+				input,
+				input::placeholder {
 					background-color: rgba(0, 0, 0, 0);
-					padding-bottom: 7px;
+					//padding-bottom: 7px;
 
 					outline: none;
 					border: none;
-					border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+					//border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
-					color: rgba(255, 255, 255, 0.4);
-					letter-spacing: 3px;
-					font-size: 2rem;
+					color: rgba(255, 255, 255, 0.6);
+					letter-spacing: 5px;
+					font-size: 1.4rem;
+				}
+
+				button {
+					height: 50px;
+					width: 50px;
+					background-color: rgba(0, 0, 0, 0);
+
+					font-weight: 100;
+					color: #fff;
+					border-radius: 200px;
+
+					outline: none;
+					border: 1px solid #fff;
+
+					opacity: 0.6;
+					transition-duration: 300ms;
+
+					&:hover {
+						cursor: pointer;
+						opacity: 1;
+					}
 				}
 			}
 		}
