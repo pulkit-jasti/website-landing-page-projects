@@ -1,8 +1,16 @@
-### Each directory has a different project with independent files        
+# A collection of landing pages 🌈 inspired from various illustrations online
 
-* None of the projects are responsive YET so the layout 'MIGHT BE' messed up in devices other than the one they were built in
-* Use Liver Server to open all web pages
+1. ### **Design Thinking** <br>
 
-##### Use the browser extension to clone a single directory
-![Chrome Extension](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn)  
-![Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/gitzip/)
+    [ Go to Directory 📂](<[https://link](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Design-Thinking)>) <br><br>
+    **Link to live version** 👇 <br>
+    https://design-thinking.netlify.app/ <br><br>
+    ![](Design-Thinking/images/design-thinking.PNG)
+    <br><br><br>
+
+2. ### **Design Thinking** <br>
+    [ Go to Directory 📂](<[https://link](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Nike-Store)>) <br><br>
+    **Link to live version** 👇 <br>
+    https://nike-store1.netlify.app/ <br><br>
+    ![](Nike-Store/Screenshot.PNG)
+    <br><br><br>
