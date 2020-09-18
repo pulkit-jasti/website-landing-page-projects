@@ -5,7 +5,7 @@
 [ Go to Directory 📂](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Design-Thinking) <br><br>
 **Link to live version** 👇 <br>
 https://design-thinking.netlify.app/ <br><br>
-![](Design-Thinking/images/design-thinking.PNG)
+![](Design-Thinking/images/screenshot.PNG)
 <br><br><br>
 
 ## 2. **Design Thinking** <br>
