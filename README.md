@@ -39,3 +39,19 @@ https://google-search-neumorphism.netlify.app/ <br><br>
 https://link <br><br>
 ![](Fashion/images/screenshot.PNG)
 <br><br><br>
+
+
+## 6.  **Into Nature** <br>
+[ Go to Directory 📂](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Into-Nature) <br><br>
+**Link to live version** 👇 <br>
+https://link <br><br>
+![](Into-Nature/images/screenshot.PNG)
+<br><br><br>
+
+
+## 7.  **Trending** <br>
+[ Go to Directory 📂]([https://link](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Trending)) <br><br>
+**Link to live version** 👇 <br>
+https://link <br><br>
+![](Trending/images/screenshot.PNG)
+<br><br><br>
