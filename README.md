@@ -13,7 +13,7 @@ https://design-thinking.netlify.app/ <br><br>
 [Go to Directory 📂](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Nike-Store) <br><br>
 **Link to live version** 👇 <br>
 https://nike-store1.netlify.app/ <br><br>
-![](Nike-Store/Screenshot.PNG)
+![](Nike-Store/images/screenshot.PNG)
 <br><br><br>
 
 ## 3. **Photographer Portfolio** <br>
@@ -21,7 +21,7 @@ https://nike-store1.netlify.app/ <br><br>
 [ Go to Directory 📂](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Photographer-Portfolio) <br><br>
 **Link to live version** 👇 <br>
 https://link <br><br>
-![](Photographer-Portfolio/screenshot.PNG)
+![](Fashion/images/screenshot.PNG)
 <br><br><br>
 
 ## 4. **Google Search Neumorphism** <br>
@@ -29,7 +29,7 @@ https://link <br><br>
 [ Go to Directory 📂](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Google-Search-Neumorphism) <br><br>
 **Link to live version** 👇 <br>
 https://google-search-neumorphism.netlify.app/ <br><br>
-![](Google-Search-Neumorphism/images/Neumorphism-Google-Search.PNG)
+![](Google-Search-Neumorphism/images/screenshot.PNG)
 <br><br><br>
 
 ## 5. **Fashion** <br>
@@ -37,5 +37,5 @@ https://google-search-neumorphism.netlify.app/ <br><br>
 [ Go to Directory 📂](https://github.com/pulkit-jasti/website-landing-page-projects/tree/master/Fashion) <br><br>
 **Link to live version** 👇 <br>
 https://link <br><br>
-![](Fashion/screenshot.PNG)
+![](Fashion/images/screenshot.PNG)
 <br><br><br>
