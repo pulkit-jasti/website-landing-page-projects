@@ -1,0 +1,321 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Baloo Thambi 2', cursive;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+a{text-decoration: none;}
+
+.flex{
+    display: flex;
+}
+
+
+
+
+
+
+.main{
+    height: 100vh;
+    width: 100%;
+}
+
+.left-bar{
+    height: 100%;
+    width: 25%;
+    background-color: orangered;
+    position: relative;
+}
+
+.fa-bars{
+    color: white;
+    font-size: 25px;
+    margin: 20px 20px 0px 20px;
+}
+
+
+.txt-box{
+    margin-left: 70px;
+    color: white;
+}
+
+.txt-1{
+    font-size: 20px;
+}
+
+.txt-2{
+    font-size: 17px;
+}
+
+.line-left{
+    background-color: white;
+    width: 70%;
+    height: 2.5%;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+
+.line-right{
+    background-color:orangered;
+    width: 70%;
+    height: 2.5%;
+    position: absolute;
+    right: -70%;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.fa-quote-left{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 35px;
+    margin-top: 17%;
+    margin-left: 15%;
+}
+
+.quote-text{
+    color: white;
+    font-size: 16px;
+    width: 70%;
+    margin-left: 27%;
+}
+
+.fa-quote-right{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 35px;
+    margin-left: 70%;
+}
+
+.vertical-menu{
+    flex-direction: column;
+    margin-top: -95%;
+    margin-left: -80%;
+}
+.vertical-menu li{
+    color: white;
+    transform: rotate(-90deg);
+    margin: 27px 0px;
+    font-size: 16px;
+}
+
+.image-container-1{
+    height: 25%;
+    width: 95%;
+    /*border: 2px solid black;*/
+    margin-top: 30%;
+    margin-left: 23%;
+    position: relative;
+    z-index: 2;
+}
+
+.button-container{
+    height: 100%;
+    width: 30%;
+    /*background-color: yellowgreen;*/
+    flex-direction: column;
+    text-align: center;
+}
+
+.fa-chevron-circle-up, .fa-chevron-circle-down{
+    color: white;
+    font-size: 35px;
+    transition-duration: 200ms;
+}
+
+.fa-chevron-circle-up{
+    margin-top: 23px;
+    margin-bottom: 5px;
+}
+
+.fa-chevron-circle-up:hover{
+    font-size: 45px;
+    cursor: pointer;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+
+.fa-chevron-circle-down{
+    margin-top: 25px;
+}
+
+.fa-chevron-circle-down:hover{
+    font-size: 45px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.image-carousel-1{
+    background-color: pink;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
+
+.image-carousel-1 img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.center-bar{
+    height: 100%;
+    width: 67%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.horizontal-menu{
+    float: right;
+    margin-top: 5%;
+}
+.fa-search{
+    font-size: 25px;
+    margin: 10px;
+    transition-duration: 300ms;
+}
+
+/*
+.fa-search:hover{
+    font-size: 30px;
+    cursor: pointer;
+}
+*/
+
+.menu-item{
+    font-size: 17px;
+    margin: 10px 23px;
+}
+
+.main-container{
+    width: 100%;
+    height: 65%;
+    margin-top: 10%;
+}
+
+.main-1{
+    height: 100%;
+    width: 65%;
+    position: relative;
+}
+
+.title-txt{
+    font-size: 50px;
+    line-height: 45px;
+    margin-top: 9%;
+    margin-left: 5%;
+}
+
+.small-txt{
+    width: 70%;
+    text-align: justify;
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.trending{
+    color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    font-size: 77px;
+    right: -170px;
+    top: 157px;
+    transform: rotate(-90deg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.main-2{
+    height: 100%;
+    width: 35%;
+}
+
+.main-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-bar{
+    height: 100%;
+    width: 8%;
+    position: relative;
+}
+
+.fa-user{
+    padding-top: 50px;
+    font-size: 30px;
+    transition-duration: 200ms;
+}
+
+.fa-user:hover{
+    font-size: 45px;
+    cursor: pointer;
+    padding-top: 43px;
+}
+
+.right-bar div{
+    text-align: center;
+}
+
+.social-icons{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.social-icons ul{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.fa-pinterest-square, .fa-facebook-square, .fa-twitter-square, .fa-instagram{
+    font-size: 30px;
+    padding: 10px 0px;
+    transition-duration: 300ms;
+}
+
+
+.fa-pinterest-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram:hover{
+    font-size: 45px;
+    cursor: pointer;
+}
+
+
+/*
+.sample-page-2{
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+*/
