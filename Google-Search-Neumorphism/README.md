@@ -1,8 +1,9 @@
 # Google Search Neumorphism
 
-**Insipiration** ✨ <br>
-https://link <br><br>
+**Insipiration** ✨<br>
+[ Visit the link 🌐](https://link)
+<br><br>
 
 **Link to live version** 👇 <br>
-https://design-thinking.netlify.app/ <br><br>
-[![](images/screenshot.PNG)](https://design-thinking.netlify.app/)
+https://google-search-neumorphism.netlify.app/ <br><br>
+[![](images/screenshot.PNG)](https://google-search-neumorphism.netlify.app/)

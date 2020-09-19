@@ -1,8 +1,9 @@
 # Fashion
 
-**Insipiration** ✨ <br>
-https://link <br><br>
+**Insipiration** ✨<br>
+[ Visit the link 🌐](https://link)
+<br><br>
 
 **Link to live version** 👇 <br>
-https://design-thinking.netlify.app/ <br><br>
-[![](images/screenshot.PNG)](https://design-thinking.netlify.app/)
+https://fashionn.netlify.app/ <br><br>
+[![](images/screenshot.PNG)](https://fashionn.netlify.app/)
