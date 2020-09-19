@@ -1,247 +1,273 @@
 //COLORS
-$dark-red:#de5f5f;
-$bright-red:#ff5851;
-$yellow:#FDEF52;
-$blue:#add8e6;
-$gray:#343436;
-$not-black-but-dark:#1c1b20;
-$silver:#f8f8f8;
+$dark-red: #de5f5f;
+$bright-red: #ff5851;
+$yellow: #fdef52;
+$blue: #add8e6;
+$gray: #343436;
+$not-black-but-dark: #1c1b20;
+$silver: #f8f8f8;
 
 //GLOBAL STYLES
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    font-family: sans-serif;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 0;
+	font-family: sans-serif;
 }
 
-a{text-decoration: none;}
-
+a {
+	text-decoration: none;
+}
 
 //MIXIN
 @mixin flexcenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @mixin verticalCenter {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-
-
 //MAIN CSS
-.main-page{
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(45deg, #dd2e2b, #ef5a46);
-    position: relative;
-    overflow: hidden;
+.main-page {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(45deg, #dd2e2b, #ef5a46);
+	position: relative;
+	overflow: hidden;
 
-    header{
-        position: absolute;
-        top: 3%;
-        left: 0;
-        height: 70px;
-        width: 100%;
-        font-weight: 700;
+	header {
+		position: absolute;
+		top: 3%;
+		left: 0;
+		height: 70px;
+		width: 100%;
+		font-weight: 700;
 
-        .left{
-            float: left;
-            height: 100%;
-            display: flex;
+		.left {
+			float: left;
+			height: 100%;
+			display: flex;
 
-            .nav-logo{
-                @include flexcenter();
-                margin: 0px 25px;
-                img{
-                    width: 100px;
-                }
-            }
-            
-            ul{
-                @include flexcenter();
-                list-style: none;
+			.nav-logo {
+				@include flexcenter();
+				margin: 0px 25px;
+				img {
+					width: 100px;
+				}
+			}
 
-                li{
-                    text-transform: uppercase;
-                    color: white;
-                    font-size: 14px;
-                    margin: 0px 10px;
-                }
-            }
-        }
+			ul {
+				@include flexcenter();
+				list-style: none;
 
-        .right{
-            float: right;
-            height: 100%;
-            display: flex;
-            @include flexcenter();
+				li {
+					text-transform: uppercase;
+					color: white;
+					font-size: 14px;
+					margin: 0px 10px;
+				}
+			}
+		}
 
-            .search-bar{
-                height: 45px;
-                width: 200px;
-                background-color: white;
-                border-radius: 30px;
-                line-height: 45px;
-                padding-left: 25px;
-                color: rgba(0, 0, 0, 0.349);
-                margin-right: 95px;
-            }
+		.right {
+			float: right;
+			height: 100%;
+			display: flex;
+			@include flexcenter();
 
-            .fa{
-                font-size: 30px;
-                color: white;
-            }
+			.search-bar {
+				height: 45px;
+				width: 200px;
+				background-color: white;
+				border-radius: 30px;
+				line-height: 45px;
+				padding-left: 25px;
+				color: rgba(0, 0, 0, 0.349);
+				margin-right: 95px;
+			}
 
-            .fa-search{
-                margin-right: 15px;
-                font-size: 25px;
-            }
+			.fa {
+				font-size: 30px;
+				color: white;
+			}
 
-            .fa-shopping-cart{
-                margin-right: 40px;
-            }
-        }
-    }
+			.fa-search {
+				margin-right: 15px;
+				font-size: 25px;
+			}
 
-    .shoe-container{
-        position: absolute;
-        left: 3%;
-        top: 0;
-        z-index: -1;
-        height: 100%;
-        transition-duration: 500ms;
+			.fa-shopping-cart {
+				margin-right: 40px;
+			}
+		}
+	}
 
-        .shoe-main{
-            position: absolute;
-            top: 50%;
-            transform:scale(-0.75,0.7) rotate(20deg) translateY(-70%);
-        }
+	.shoe-container {
+		position: absolute;
+		left: 3%;
+		top: 0;
+		z-index: -1;
+		height: 100%;
+		transition-duration: 500ms;
 
-        .bck-txt{
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translateY(-50%);
-            margin-left: 0px;
-            font-size: 330px;
-            font-weight: 700;
-            color: rgba(255, 255, 255, 0.288);
-            z-index: -2;
-            text-transform: uppercase;
-        }
-    }
-    
-    .product-info-container{
-        height: 100%;
-        width: 32%;
-        //background-color: lightgreen;
-        float: right;
-        color: white;
-        display: flex;
-        align-items: center;
-        transform: translateY(3%);
+		.shoe-main {
+			position: absolute;
+			top: 50%;
+			transform: scale(-0.75, 0.7) rotate(20deg) translateY(-70%);
+		}
 
-        .info-wrapper{
-            //background-color: lightblue;
+		.bck-txt {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translateY(-50%);
+			margin-left: 0px;
+			font-size: 330px;
+			font-weight: 700;
+			color: rgba(255, 255, 255, 0.288);
+			z-index: -2;
+			text-transform: uppercase;
+		}
+	}
 
-            .nike{
-                font-style: italic;
-                font-weight: 700;
-                font-size: 50px;
-                margin-bottom: 7%;
-                text-transform: uppercase;
-            }
+	.product-info-container {
+		height: 100%;
+		width: 32%;
+		//background-color: lightgreen;
+		float: right;
+		color: white;
+		display: flex;
+		align-items: center;
+		transform: translateY(3%);
 
-            .shoe-category{
-                font-size: 13px;
-                margin-bottom: 2%;
-                color: rgba(255, 255, 255, 0.61);
-                text-transform: capitalize;
-            }
+		.info-wrapper {
+			//background-color: lightblue;
 
-            .shoe-name{
-                font-size: 30px;
-                margin-bottom: 5%;
-                font-weight: 600;
-                text-transform: capitalize;
-            }
+			.nike {
+				font-style: italic;
+				font-weight: 700;
+				font-size: 50px;
+				margin-bottom: 7%;
+				text-transform: uppercase;
+			}
 
-            .description{
-                width: 80%;
-                font-size: 13px;
-                //letter-spacing: 1px;
-                margin-bottom: 8%;
-            }
+			.shoe-category {
+				font-size: 13px;
+				margin-bottom: 2%;
+				color: rgba(255, 255, 255, 0.61);
+				text-transform: capitalize;
+			}
 
-            .price{
-                font-size: 30px;
-                margin: 20px 0px;
-                font-weight: 700;
-            }
+			.shoe-name {
+				font-size: 30px;
+				margin-bottom: 5%;
+				font-weight: 600;
+				text-transform: capitalize;
+			}
 
-            .size{
-                font-size: 17px;
-                font-weight: 700;
-                text-transform: capitalize;;
-            }
+			.description {
+				width: 80%;
+				font-size: 13px;
+				//letter-spacing: 1px;
+				margin-bottom: 8%;
+			}
 
-            .size-container{
-                display: flex;
-                list-style: none;
-                margin: 10px 0px 30px 0px;
+			.price {
+				font-size: 30px;
+				margin: 20px 0px;
+				font-weight: 700;
+			}
 
-                &:hover{
-                    cursor: none;
-                }
+			.size {
+				font-size: 17px;
+				font-weight: 700;
+				text-transform: capitalize;
+			}
 
-                li{
-                    height: 40px;
-                    width: 40px;
-                    margin-right: 10px;
-                    background-color: rgba(255, 255, 255, 0.342);
-                    text-align: center;
-                    line-height: 40px;
-                    border-radius: 5px;
-                    color: rgb(255, 255, 255);
-                    font-weight: 700;
-                    transition-duration: 200ms;
+			.size-container {
+				display: flex;
+				list-style: none;
+				margin: 10px 0px 30px 0px;
 
-                    &:hover{
-                        transform: scale(1.2,1.2);
-                    }
-                }
-            }
+				&:hover {
+					cursor: none;
+				}
 
-            .add-cart-btn{
-                height: 40px;
-                width: 150px;
-                border: 2px solid white;
-                line-height: 40px;
-                text-align: center;
-                font-size: 12px;
-                letter-spacing: 3px;
-                text-transform: uppercase;
-                transition-duration: 200ms;
+				li {
+					height: 40px;
+					width: 40px;
+					margin-right: 10px;
+					background-color: rgba(255, 255, 255, 0.342);
+					text-align: center;
+					line-height: 40px;
+					border-radius: 5px;
+					color: rgb(255, 255, 255);
+					font-weight: 700;
+					transition-duration: 200ms;
 
-                &:hover{
-                    transform: scale(1.2,1.2);
-                    cursor: none;
-                }
-            }
-        }
-    }
+					&:hover {
+						transform: scale(1.2, 1.2);
+					}
+				}
+			}
+
+			.add-cart-btn {
+				height: 40px;
+				width: 150px;
+				border: 2px solid white;
+				line-height: 40px;
+				text-align: center;
+				font-size: 12px;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				transition-duration: 200ms;
+
+				&:hover {
+					transform: scale(1.2, 1.2);
+					cursor: none;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 1200px) {
-    .shoe-container{
-        transform: scale(0.8,0.8);
-    }
+	.shoe-container {
+		transform: scale(0.8, 0.8);
+	}
+}
+
+.mobile {
+	display: none;
+
+	.mobile-container {
+		width: 100%;
+		height: 100vh;
+		padding: 0 20px;
+		@include flexcenter();
+
+		p {
+			font-family: monospace !important;
+			font-size: 2rem;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	main {
+		display: none;
+	}
+
+	.mobile {
+		display: unset;
+	}
 }
